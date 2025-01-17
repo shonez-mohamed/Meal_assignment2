@@ -1,0 +1,16 @@
+<div class="card text-center">
+    <div class="card-header">
+        Hello from Team Component
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Hi I'm the Team Parent Component <i class="fa-solid fa-hand" style="color: #0dcaf0;"></i>  and I Have A Child Called Supervisor 5aaafoooo Minooooooooo <i class="fa-solid fa-ghost" style="color: #000000;"></i></h5>
+      <p class="card-text">{{myDescr}}</p>
+      <div class="mx-auto w-50">
+        <app-child (myEvent)="myDescr = $event"></app-child>
+      </div>
+    </div>
+    <div class="card-footer text-body-secondary">
+      2 days ago
+    </div>
+  </div>
+

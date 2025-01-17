@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <div class="row g-5">
+            @for (pasta of pasta; track $index) {
+                <div class="col-3">
+                    <app-card [myfood]="pasta"></app-card>
+                </div>
+            }
+            @empty {
+                <h2>Data Not Avil.</h2>
+            }
+        </div>
+    </div>
+</section>
